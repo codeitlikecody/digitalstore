@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Image from "next/image";
+import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Home() {
@@ -17,7 +17,10 @@ export default function Home() {
           straight-to-landfill junk around these parts!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
-          <Link href="/products">Browse objects</Link>
+          <Link href="/products" className={buttonVariants()}>
+            Popular Products
+          </Link>
+          <Button variant="secondary">The Makeable Mantra</Button>
         </div>
       </div>
     </MaxWidthWrapper>
