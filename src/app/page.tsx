@@ -1,12 +1,10 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { ModeToggle } from "@/components/themeModeToggle";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
   BadgeCheck,
   Globe2,
   Hammer,
   HeartHandshake,
-  ListChecks,
   Package,
   Users,
 } from "lucide-react";
@@ -56,7 +54,6 @@ export default function Home() {
     <>
       <MaxWidthWrapper>
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl bg-background">
-          <ModeToggle />
           <h1 className="text-4xl font-bold tracking-tight text-foreground">
             The marketplace for <span className="text-primary">authentic </span>
             makers
